@@ -1,234 +1,262 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Adventure </title>
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<html lang="en">
+<head>
+<title>Adventure</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travelix Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/hero-slider.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/datepicker.css">
-        <link rel="stylesheet" href="css/tooplate-style.css">
+        <link rel="stylesheet" href="styles/tooplate-style.css">
+</head>
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<body>
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
-
-  <style>
-    *{
-      margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif;
-    }
+<div class="super_container">
   
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
-  </style>
-  </head>
-  <body>
-  <header>
-     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="{{url('/')}}">Adventure</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
+  <!-- Header -->
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="{{url('/')}}" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="{{url('/flight')}}" class="nav-link">Flight</a></li>
-            <li class="nav-item"><a href="{{url('/home')}}" class="nav-link">Login/Registration</a></li>
-          </ul>
+  <header class="header">
+
+    <!-- Top Bar -->
+
+    
+
+    <!-- Main Navigation -->
+
+    <nav class="main_nav">
+      <div class="container">
+        <div class="row">
+          <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
+            <div class="logo_container">
+              <div class="logo"><a href="{{url('/')}}"><img src="images/logo.png" alt="">Adventure</a></div>
+            </div>
+            <div class="main_nav_container ml-auto">
+              <ul class="main_nav_list">
+                <li class="main_nav_item"><a href="{{url('/')}}">home</a></li>
+                <li class="main_nav_item"><a href="#intro">offers</a></li>
+                <li class="main_nav_item"><a href="#contact">contact</a></li>
+                <li class="main_nav_item"><a href="{{url('/home')}} " class="nav-link">login/registration</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>  
+    </nav>
+
+  </header>
+
+
+  <!-- Home -->
+
+  <div class="home">
+    
+    <!-- Home Slider -->
+
+    <div class="home_slider_container">
+      
+      <div class="owl-carousel owl-theme home_slider">
+
+        <!-- Slider Item -->
+        <div class="owl-item home_slider_item">
+ 
+          <div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
+
+          <div class="home_slider_content text-center">
+            <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+              <h1>Pebblar</h1>
+              <div class="button home_slider_button"><div class="button_bcg"></div><a href="https://pebblar.com/" target="_blank">explore now<span></span><span></span><span></span></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Item -->
+        <div class="owl-item home_slider_item">
+          <div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
+
+          <div class="home_slider_content text-center">
+            <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+              <h1>Roadtrippers</h1>
+              <div class="button home_slider_button"><div class="button_bcg"></div><a href="https://www.tripit.com/web" target="_blank">explore now<span></span><span></span><span></span></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Item -->
+        <div class="owl-item home_slider_item">
+          <div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
+
+          <div class="home_slider_content text-center">
+            <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+              <h1>Trip It</h1>
+              <div class="button home_slider_button"><div class="button_bcg"></div><a href="https://www.tripit.com/web" target="_blank">explore now<span></span><span></span><span></span></a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Home Slider Nav - Prev -->
+      <div class="home_slider_nav home_slider_prev">
+        <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+          <defs>
+            <linearGradient id='home_grad_prev'>
+              <stop offset='0%' stop-color='#fa9e1b'/>
+              <stop offset='100%' stop-color='#8d4fff'/>
+            </linearGradient>
+          </defs>
+          <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+          M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+          C22.545,2,26,5.541,26,9.909V23.091z"/>
+          <polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
+          11.042,18.219 "/>
+        </svg>
+      </div>
+      
+      <!-- Home Slider Nav - Next -->
+      <div class="home_slider_nav home_slider_next">
+        <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+          <defs>
+            <linearGradient id='home_grad_next'>
+              <stop offset='0%' stop-color='#fa9e1b'/>
+              <stop offset='100%' stop-color='#8d4fff'/>
+            </linearGradient>
+          </defs>
+        <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+        M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+        C22.545,2,26,5.541,26,9.909V23.091z"/>
+        <polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
+        17.046,15.554 "/>
+        </svg>
+      </div>
+
+      
+      
+    </div>
+
+  </div>
+
+
+  <!-- Intro -->
+  
+  <div class="intro" id="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="intro_title text-center">We have the best tours</h2>
         </div>
       </div>
-    </nav>
-    
-    </div>
-    
-      
-    
-    <div id="demo" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <a href="https://pebblar.com/" target="_blank">
-      <img src="img/1.jpg" alt="Los Angeles" width="1100" height="500">
-      </a>
-      <div class="carousel-caption">
-        <h3>Pebblar</h3>
-        <p>Plan your own unique itinerary as detailed as you’d like!</p>
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <a href="https://roadtrippers.com/" target="_blank">
-      <img src="img/blur-cartography-close-up-concept-408503 (1).jpg"  alt="Chicago" width="1100" height="500">
-      </a>
-      <div class="carousel-caption">
-        <h3>Roadtrippers</h3>
-        <p>Plan your next road trip faster!</p>
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <a href="flight" target="_blank">
-      <img src="img/bokeh-hd-wallpaper-54278 (1).jpg" alt="New York" width="1100" height="500">
-      </a>
-      <div class="carousel-caption">
-        <h3>Travel With Us</h3>
-        <p>You will get what you want!</p>
-      </div>   
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="intro_text text-center">
+            <p>Plan your own unique itinerary as detailed as you’d like,You will get what you want!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row intro_items">
+
+        <!-- Intro Item -->
+
+        <div class="col-lg-4 intro_col">
+          <div class="intro_item">
+            <div class="intro_item_overlay"></div>
+            <div class="intro_item_background" style="background-image:url(images/intro_1.jpg)"></div>
+            <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
+              <div class="intro_date">May 25th - June 01st</div>
+              <div class="button intro_button"><div class="button_bcg"></div><a href="https://pebblar.com/" target="_blank">see more<span></span><span></span><span></span></a></div>
+              <div class="intro_center text-center">
+                <h1>Mauritius</h1>
+                <div class="intro_price">From $1450</div>
+                <div class="rating rating_4">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intro Item -->
+
+        <div class="col-lg-4 intro_col">
+          <div class="intro_item">
+            <div class="intro_item_overlay"></div>
+            <div class="intro_item_background" style="background-image:url(images/intro_2.jpg)"></div>
+            <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
+              <div class="intro_date">May 25th - June 01st</div>
+              <div class="button intro_button"><div class="button_bcg"></div><a href="https://roadtrippers.com/" target="_blank">see more<span></span><span></span><span></span></a></div>
+              <div class="intro_center text-center">
+                <h1>Greece</h1>
+                <div class="intro_price">From $1450</div>
+                <div class="rating rating_4">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intro Item -->
+
+        <div class="col-lg-4 intro_col">
+          <div class="intro_item">
+            <div class="intro_item_overlay"></div>
+            <div class="intro_item_background" style="background-image:url(images/intro_3.jpg)"></div>
+            <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
+              <div class="intro_date">May 25th - June 01st</div>
+              <div class="button intro_button"><div class="button_bcg"></div><a href="https://www.tripit.com/web" target="_blank">see more<span></span><span></span><span></span></a></div>
+              <div class="intro_center text-center">
+                <h1>Scotland</h1>
+                <div class="intro_price">From $1450</div>
+                <div class="rating rating_4">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
-    </header>
-        
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-<br>
-<section class="banner" id="top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="left-side">
-                        <div class="logo">
-                            <img src="img/logo.png" alt="Flight Template">
-                        </div>
-                        <div class="tabs-content">
-                            <h4>Choose Your Direction:</h4>
-                            <ul class="social-links">
-                                <li><a href="http://facebook.com">Find us on <em>Facebook</em><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="http://youtube.com">Our <em>YouTube</em> Channel<i class="fa fa-youtube"></i></a></li>
-                                <li><a href="http://instagram.com">Follow our <em>instagram</em><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="page-direction-button">
-                            <a href="contact.html"><i class="fa fa-phone"></i>Contact Us Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 col-md-offset-1">
-                    <section id="first-tab-group" class="tabgroup">
-                        <div id="tab1">
-                            <div class="submit-form">
-                                <h4>Check availability for <em>direction</em>:</h4>
-                                <form id="form-submit" action="" method="get">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <label for="from">From:</label>
-                                                <select required name='from' onchange='this.form.()'>
-                                                    <option value="">Select a location...</option>
-                                                    <option value="Cambodia">Cambodia</option>
-                                                    <option value="Hong Kong">Hong Kong</option>
-                                                    <option value="India">India</option>
-                                                    <option value="Japan">Japan</option>
-                                                    <option value="Korea">Korea</option>
-                                                    <option value="Laos">Laos</option>
-                                                    <option value="Myanmar">Myanmar</option>
-                                                    <option value="Singapore">Singapore</option>
-                                                    <option value="Thailand">Thailand</option>
-                                                    <option value="Vietnam">Vietnam</option>
-                                                </select>
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <label for="to">To:</label>
-                                                <select required name='to' onchange='this.form.()'>
-                                                    <option value="">Select a location...</option>
-                                                    <option value="Cambodia">Cambodia</option>
-                                                    <option value="Hong Kong">Hong Kong</option>
-                                                    <option value="India">India</option>
-                                                    <option value="Japan">Japan</option>
-                                                    <option value="Korea">Korea</option>
-                                                    <option value="Laos">Laos</option>
-                                                    <option value="Myanmar">Myanmar</option>
-                                                    <option value="Singapore">Singapore</option>
-                                                    <option value="Thailand">Thailand</option>
-                                                    <option value="Vietnam">Vietnam</option>
-                                                </select>
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <label for="departure">Departure date:</label>
-                                                <input name="deparure" type="text" class="form-control date" id="deparure" placeholder="Select date..." required onchange='this.form.()'>
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <label for="return">Return date:</label>
-                                                <input name="return" type="text" class="form-control date" id="return" placeholder="Select date..." required onchange='this.form.()'>
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="radio-select">
-                                                <div class="row">
-                                                    <div class="col-md-6 col-sm-6 col-xs-6">
-                                                        <label for="round">Round</label>
-                                                        <input type="radio" name="trip" id="round" value="round" requiredonchange='this.form.()'>
-                                                    </div>
-                                                    <div class="col-md-6 col-sm-6 col-xs-6">
-                                                        <label for="oneway">Oneway</label>
-                                                        <input type="radio" name="trip" id="oneway" value="one-way" requiredonchange='this.form.()'>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <button type="submit" id="form-submit" class="btn">Order Ticket Now</button>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
+
+
+  <div class="contact" id="contact">
+    <div class="contact_background" style="background-image:url(images/contact.png)"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="contact_image">
+            
+          </div>
         </div>
-    </section>
 
-
-<br><br>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style type="text/css">
-   .box{
-    width:600px;
-    margin:0 auto;
-    border:1px solid #ccc;
-   }
-   .has-error
-   {
-    border-color:#cc0000;
-    background-color:#ffff99;
-   }
-  </style>
-
-<div class="container">
-   <h3 align="center">Contact Us</h3><br />
-   @if (count($errors) > 0)
+        <div class="col-lg-7">
+          <div class="contact_form_container">
+            @if (count($errors) > 0)
     <div class="alert alert-danger">
      <button type="button" class="close" data-dismiss="alert">×</button>
      <ul>
@@ -246,7 +274,9 @@
    @endif
    <form method="post" action="{{url('sendemail/send')}}">
     {{ csrf_field() }}
-    <div class="form-group">
+
+            <div class="contact_title">get in touch</div>
+            <div class="form-group">
      <label>Enter Your Name</label>
      <input type="text" name="name" class="form-control" value="" />
     </div>
@@ -255,70 +285,53 @@
      <input type="text" name="email" class="form-control" value="" />
     </div>
     <div class="form-group">
-     <label>Enter Your Message</label>
+     <label>Enter Your Message & Phone Number</label>
      <textarea name="message" class="form-control"></textarea>
-    </div>
-    <div class="form-group">
-     <input type="submit" name="send" class="btn btn-info" value="Send" />
+    </div><br><br>
+    <div class="form-group text-center">
+     <input type="submit" name="send" class="btn btn-info" value="Send Message" />
     </div>
    </form>
-   
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-    
 
-
-    
-
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-    <script src="js/vendor/bootstrap.min.js"></script>
-    
-    <script src="js/datepicker.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-
+<br><br>
         
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">Back To Top</a>
+                    </div>
+                </div>
+              
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2020 Flight Tour and Travel Company
+                
+                | Design By: <em>Najaf & Musyeb</em></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        // navigation click actions 
-        $('.scroll-link').on('click', function(event){
-            event.preventDefault();
-            var sectionID = $(this).attr("data-id");
-            scrollToID('#' + sectionID, 750);
-        });
-        // scroll to top action
-        $('.scroll-top').on('click', function(event) {
-            event.preventDefault();
-            $('html, body').animate({scrollTop:0}, 'slow');         
-        });
-        // mobile nav toggle
-        $('#nav-toggle').on('click', function (event) {
-            event.preventDefault();
-            $('#main-nav').toggleClass("open");
-        });
-    });
-    // scroll function
-    function scrollToID(id, speed){
-        var offSet = 0;
-        var targetOffset = $(id).offset().top - offSet;
-        var mainNav = $('#main-nav');
-        $('html,body').animate({scrollTop:targetOffset}, speed);
-        if (mainNav.hasClass("open")) {
-            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-            mainNav.removeClass("open");
-        }
-    }
-    if (typeof console === "undefined") {
-        console = {
-            log: function() { }
-        };
-    }
-    </script>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
-  </body>
+
 </html>

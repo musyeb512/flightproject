@@ -1,9 +1,6 @@
 
 @extends('layouts.header')
 @section('content') 
-<!-- <div class="navbar-wrapper">
-<a class="navbar-brand text-black " href="#pablo">Bus List</a>
- </div> -->
 @include('admin.message')
 <div class="content">
         <div class="container-fluid">
@@ -32,7 +29,7 @@
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Created Date</th>
-                    <th>Action</th>
+                    
                     </thead>
                     <tbody>
                     @foreach ( $operators as $data )
@@ -46,12 +43,7 @@
                         <!-- <td>{{ $data->operator_description }}</td> -->
                         <td>{{ $data->created_at }}</td>
                         <td>
-                          <form action="{{ '/admin/operator/' . $data->operator_id }}" method="post">
-                            {{ csrf_field() }}
-                            {{ method_field('DELETE') }}
-                            <input type="submit" name="submit" value="Edit" class="btn btn-sm btn-info" />
-                            <input type="submit" name="submit" value="Delete" class="btn btn-sm btn-danger" />
-                          </form>
+                       
                         </td>
                       </tr>
                     @endforeach

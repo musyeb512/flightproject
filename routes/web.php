@@ -17,13 +17,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+
 
 // Operator Routes
 Route::Resource('operator', 'OperatorController');
 
-//  Bus Route
-Route::Resource('bus','BusController');
+//  Flight Route
+Route::Resource('flight','FlightController');
 
 //  Region Route
 Route::Resource('region','RegionController');
@@ -33,9 +36,27 @@ Route::Resource('sub-region','Sub_RegionController');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//flight Schedule
+Route::Resource('flight-schedule','FlightScheduleController');
+
+Route::get('/showregion', ['as'=> 'showregion' , 'uses' =>'FlightScheduleController@showRegion']);
+
+Route::get('/showOperator', ['as'=> 'showOperator' , 'uses' =>'FlightScheduleController@showOperator']);
+
 Route ::resource('/admin/users', 'Admin\UsersController', ['except' => ['show', 'create', 'store']]);
 
 Route ::namespace('Admin') -> prefix('admin')-> name('admin.')->middleware('can:manage.users')-> group(function(){
 	Route ::resource('/admin/users', 'UsersController', ['except' => ['show', 'create', 'store']]);
 });
 
+Route::get('/sendemail', 'SendEmailController@index');
+Route::post('/sendemail/send', 'SendEmailController@send');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

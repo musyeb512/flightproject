@@ -53,7 +53,6 @@ class RegionController extends Controller
          ];
         //  dd($insertRegion); // we will check okay if we are having all the data okay
          DB::table('regions')->insert( $insertRegion);
-         Session::flash('msg', 'Region Register Successfully!');
          return redirect()->back();
  
          return view('admin.regions.region-list');

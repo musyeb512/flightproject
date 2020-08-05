@@ -16,11 +16,13 @@ class Sub_RegionController extends Controller
      */
     public function index()
     {
-        $sub_region = Sub_Region::get();
+        //$sub_region = Sub_Region::get();
         $region = Region::get();
         // let's work on the relation in the next part of the video okay.
         // because the time is already finish 
         // thank you so much for watching okay.
+        $sub_region = Sub_Region::join('regions', 'regions.region_id','=','sub_regions.region_id')->get();
+        //dd($request); die;
         return view('admin.sub_regions.sub-region-list',
         compact('sub_region','region'));
     }

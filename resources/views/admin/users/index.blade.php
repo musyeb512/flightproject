@@ -1,23 +1,30 @@
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+@extends('layouts.header')
+@section('content') 
+@include('admin.message')
+<div class="content">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Users</div>
-
-                <div class="card-body">
+                
                     
 
                     <table class="table">
   <thead>
+    <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Users</h4>
+                  <h4 class="card-title pull-right">Today is: {{ date('d-m-Y', time()) }}</h4>
+                  <p class="card-category"> Here is a subtitle for this table</p>
+                </div>
+                 <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
     <tr>
       <th scope="col">#</th>
       <th scope="col">Name</th>
       <th scope="col">Email</th>
-      <th scope="col">Roles</th>
-      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -47,9 +54,13 @@
   
   </tbody>
 </table>
+
                 </div>
             </div>
         </div>
     </div>
+</div>
+</thead>
+</table>
 </div>
 @endsection

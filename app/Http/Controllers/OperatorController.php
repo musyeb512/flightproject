@@ -86,7 +86,8 @@ class OperatorController extends Controller
      */
     public function edit($id)
     {
-        //
+        $operators = Operator::find($id);
+        return view('operatorupdateform')->with('operators',$operators);
     }
 
     /**

@@ -1,13 +1,13 @@
 <div class="sidebar-wrapper">
     <ul class="nav">
       <li class="nav-item active  ">
-        <a class="nav-link" href="./dashboard.html">
+        <a class="nav-link" href="{{route('home')}}">
           <i class="material-icons">dashboard</i>
           <p>Dashboard</p>
         </a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="./user.html">
+        <a class="nav-link" href="{{route('users.index')}}">
           <i class="material-icons">person</i>
           <p>User Profile</p>
         </a>
@@ -19,9 +19,15 @@
         </a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="{{route('bus.index')}}">
+        <a class="nav-link" href="{{route('flight-schedule.index')}}">
+          <i class="material-icons">schedule</i>
+          <p>Flight Schedule List</p>
+        </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="{{route('flight.index')}}">
           <i class="material-icons">library_books</i>
-          <p>Buses List</p>
+          <p>Flight List</p>
         </a>
       </li>
       <li class="nav-item ">
@@ -42,17 +48,6 @@
           <p>Notifications</p>
         </a>
       </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="./rtl.html">
-          <i class="material-icons">language</i>
-          <p>RTL Support</p>
-        </a>
-      </li>
-      <li class="nav-item active-pro ">
-        <a class="nav-link" href="./upgrade.html">
-          <i class="material-icons">unarchive</i>
-          <p>Upgrade to PRO</p>
-        </a>
-      </li>
+      
     </ul>
   </div>
